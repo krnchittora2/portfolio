@@ -1,12 +1,76 @@
-# React + Vite
+# 🚀 Karan Chittora's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio built with **React**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Swiper**. It's hosted on **GitHub Pages** and designed to showcase my skills, projects, and experience in a clean, animated, and professional layout.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+➡️ [krnchittora2.github.io/portfolio](https://krnchittora2.github.io/portfolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- Dark/Light mode toggle
+- Animated skills section
+- Professional timeline & journey timeline (clickable tree layout)
+- Horizontal carousel for projects with filter by technology
+- Contact form via [FormSubmit](https://formsubmit.co)
+- Floating back to top button
+- Fully responsive and mobile-friendly
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React + Vite** for lightning-fast builds
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **Swiper.js** for project carousel
+- **Lucide Icons** and **React Icons**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Folder Structure
+```bash
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AnimatedBackground.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Journey.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   ├── utils/
+│   │   └── animations.js
+│   └── index.jsx
+└── README.md
+```
+
+## 📦 Setup & Installation
+```bash
+git clone https://github.com/krnchittora2/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+## 🚀 Deployment to GitHub Pages
+```bash
+npm install gh-pages --save-dev
+```
+In `package.json`:
+```json
+"homepage": "https://krnchittora2.github.io/portfolio",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+Then:
+```bash
+npm run deploy
+```
+
+## 📬 Contact
+Feel free to connect:
+- Email: karan.chittora@gmail.com
+- [LinkedIn](https://linkedin.com/in/krnchittora)
+- [GitHub](https://github.com/krnchittora)
+
+---
+
+> Built with ❤️ by [Karan Chittora](https://krnchittora2.github.io/portfolio)
