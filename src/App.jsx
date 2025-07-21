@@ -37,7 +37,7 @@ function App() {
         <motion.button onClick={toggleTheme} className="bg-gray-700 hover:bg-gray-600 text-white dark:text-black p-2 rounded-full shadow-xl" whileHover={{ scale: 1.2, rotate: 10 }} whileTap={{ scale: 0.95 }} title="Toggle Theme">
           {darkMode ? <Sun size={18} /> : <Moon size={18} />}
         </motion.button>
-        <motion.a href="/Karan_Chittora_Resume.pdf" download className="bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full shadow-xl" whileHover={{ scale: 1.2, rotate: -10 }} whileTap={{ scale: 0.95 }} title="Download Resume">
+        <motion.a href="/portfolio/psych" /*download*/ className="bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full shadow-xl" whileHover={{ scale: 1.2, rotate: -10 }} whileTap={{ scale: 0.95 }} title="Download Resume">
           <FileDown size={18} />
         </motion.a>
         <motion.a href="#contact" className="bg-teal-700 hover:bg-gray-600 text-white p-2 rounded-full shadow-xl" whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.95 }} title="Contact Me">

@@ -5,50 +5,76 @@ import { fadeRotateZoom } from "../utils/animations";
 
 const journeyTree = [
   {
-    year: "2014-2016",
-    school: "High School",
-    icon: <School className="text-teal-400 w-5 h-5" />,
+    year: "2018-2022",
+    school: "IIT Bombay",
+    icon: <GraduationCap className="text-teal-400 w-5 h-5" />,
     activities: [
       {
-        title: "Science Fair Participation",
-        description: "Represented school at state-level science fair with solar automation model.",
-        tags: ["STEM", "Presentation"]
+        title: "Student Satellite Program",
+        jobTitle: "Web Manager",
+        jobPeriod: "Jan 2020 - Jan 2021",
+        description: "Spearheaded a team of 4 members directing them in development, outreach, and content design. " 
+        + "Designed the UI for the website considering the ease of navigation and accessibility. " 
+        + "Developed the website using PHP and Bootstrap 4 from scratch improving latency due to image loading. ",
+        tags: ["PHP", "Bootstrap 4", "HTML5"]
+      },
+      {
+        title: "Aakaar 2020",
+        jobTitle: "Web Head",
+        jobPeriod: "Aug 2019 - July 2020",
+        description: "Created responsive website, dashboard and sign-in panel of festival with auto-generated user IDs. "
+        + "Created a registration panel for events in the festival using PHP streamlining the process for 1000+ participants.",
+        tags: ["PHP", "Bootstrap 4", "HTML5"]
       }
     ]
   },
   {
     year: "2016-2018",
-    school: "Senior Secondary School",
+    school: "JNV Bengaluru Urban",
     icon: <School className="text-teal-400 w-5 h-5" />,
     activities: [
       {
-        title: "Junior Science Club",
-        description: "Collaborated on experiments and published 2 newsletters.",
-        tags: ["Collaboration", "Writing"]
+        title: "Dakshana Foundation",
+        jobTitle: "JEE Scholarship",
+        jobPeriod: "2018",
+        description: "Placed in top 1 percentile in JEE Advanced-2018 among more than 2.3 lacs students.",
+        tags: ["Competition", "Scholastic"]
       },
       {
-        title: "Literature Club",
-        description: "Participated in debates and essay contests.",
-        tags: ["Public Speaking", "Creativity"]
+        title: "NSEC by IAPT",
+        jobTitle: "Chemistry Olympiad",
+        jobPeriod: "2018",
+        description: "Honored with Certificate of Merit for being placed in state-wide top 1% in NSEC by IAPT.",
+        tags: ["Competition", "Scholastic"]
       }
     ]
   },
   {
-    year: "2018-2022",
-    school: "B.Tech in CSE",
-    icon: <GraduationCap className="text-teal-400 w-5 h-5" />,
+    year: "2014-2016",
+    school: "JNV Kota",
+    icon: <School className="text-teal-400 w-5 h-5" />,
     activities: [
       {
-        title: "Coding Club",
-        description: "Led weekly problem-solving sessions and conducted hackathons.",
-        tags: ["Leadership", "Hackathons"]
+        title: "Nation Cadet Corps (NCC)",
+        jobTitle: "Cadet",
+        jobPeriod: "2016",
+        description: "Received A-Certificate by NCC for completion of Combined Annual Training Camp.",
+        tags: ["Training", "Service"]
       },
       {
-        title: "Robotics Society",
-        description: "Built line-following and obstacle-avoiding bots for inter-college competitions.",
-        tags: ["Hardware", "Team Work"]
+        title: "JNV-ST",
+        jobTitle: "Qualified",
+        jobPeriod: "2014",
+        description: "Participated and reserved a seat in Jawahar Navodaya Vidyalaya by qualiying in JNV Selection Test for Lateral Entry.",
+        tags: ["Competition", "Scholastic"]
       }
     ]
+  // },
+  // {
+  //   year: "2003-2014",
+  //   school: "Central Public School",
+  //   icon: <School className="text-teal-400 w-5 h-5" />,
+  //   activities: []
   }
 ];
 
@@ -58,7 +84,7 @@ export default function Journey() {
 
   return (
     <motion.section className="max-w-7xl mx-auto px-4" initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeRotateZoom}>
-      <h2 className="text-3xl font-bold text-center text-teal-400 mb-10">Learning Journey</h2>
+      <h2 className="text-3xl font-bold text-center text-teal-400 mb-10">My Journey</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left: Schools */}
         <div className="space-y-6 relative">
@@ -96,6 +122,9 @@ export default function Journey() {
               onClick={() => setActiveActivity(index)}
             >
               <div className="text-md font-medium">{activity.title}</div>
+              <div className="flex flex-col items-end">
+                <span className="text-sm font-semibold text-teal-400">{activity.jobTitle}</span>
+              </div>
             </div>
           ))}
         </div>

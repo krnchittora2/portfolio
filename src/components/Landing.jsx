@@ -18,7 +18,7 @@ export default function Landing() {
 
       <ReactTyped
         className="text-xl text-gray-400"
-        strings={["Software Developer", "Backend Engineer", "Fullstack Problem Solver"]}
+        strings={["Full Stack Developer", "Software Consultant", "Backend Engineer", "AI Enthusiast"]}
         typeSpeed={60}
         backSpeed={40}
         loop
@@ -26,13 +26,14 @@ export default function Landing() {
 
       <motion.div className="flex flex-wrap justify-center gap-4 pt-4">
         {[
-          ['GitHub', Github],
-          ['LinkedIn', Linkedin],
-          ['Email', Mail]
-        ].map(([label, Icon], idx) => (
+          ['GitHub', Github, "https://github.com/krnchittora2"],
+          ['LinkedIn', Linkedin, "https://linkedin.com/in/karanchittora"],
+          ['Email', Mail, "mailto:krnchittora2@gmail.com"],
+        ].map(([label, Icon, hrefPath], idx) => (
           <motion.a
             key={idx}
-            href="#"
+            href={hrefPath}
+            target="_blank"
             className="group bg-black hover:bg-gray-800 text-white px-4 py-2 rounded flex items-center gap-2 transition-all duration-300"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
@@ -47,10 +48,11 @@ export default function Landing() {
         className="absolute -top-8 right-0 text-sm flex items-center gap-2 bg-blue-800/40 px-4 py-2 rounded-full text-blue-200 shadow-lg animate-pulse"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
+        title="Psych!!"
         transition={{ delay: 1, duration: 0.6 }}
       >
         <Sparkles className="w-4 h-4" />
-        Featured on DevSpot Weekly
+        {/* Featured on DevSpot Weekly */}
       </motion.div>
     </motion.section>
   );

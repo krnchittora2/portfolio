@@ -2,31 +2,43 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeRotateZoom, staggerContainer } from "../utils/animations";
 import {
-  FaHtml5,
-  FaCss3Alt,
   FaReact,
-  FaNodeJs,
   FaJava,
   FaPython,
+  FaAws,
+  FaGitlab,
 } from "react-icons/fa";
 import {
-  SiTailwindcss,
-  SiTypescript,
-  SiMongodb,
   SiPostgresql,
+  SiOracle,
+  SiJavascript,
+  SiDjango,
+  SiMicrosoftsqlserver,
+  SiOpenai,
+  SiGooglecloud,
+  SiApachekafka,
+  SiApachetomcat,
+  SiJirasoftware,
 } from "react-icons/si";
+import { Leaf, LeafyGreenIcon } from "lucide-react";
 
 const skills = [
-  { icon: <FaHtml5 size={40} className="text-orange-500" />, title: "HTML5" },
-  { icon: <FaCss3Alt size={40} className="text-blue-500" />, title: "CSS3" },
-  { icon: <SiTailwindcss size={40} className="text-cyan-400" />, title: "Tailwind" },
-  { icon: <FaReact size={40} className="text-cyan-300" />, title: "React" },
-  { icon: <FaNodeJs size={40} className="text-green-400" />, title: "Node.js" },
-  { icon: <SiTypescript size={40} className="text-blue-400" />, title: "TypeScript" },
-  { icon: <FaJava size={40} className="text-red-500" />, title: "Java" },
-  { icon: <FaPython size={40} className="text-yellow-300" />, title: "Python" },
-  { icon: <SiMongodb size={40} className="text-green-600" />, title: "MongoDB" },
-  { icon: <SiPostgresql size={40} className="text-blue-500" />, title: "PostgreSQL" },
+  { icon: <FaAws size={40} className="fill-current text-blue-500" />, title: "AWS EC2" },
+  { icon: <SiGooglecloud size={40} className="fill-red-500" />, title: "Google Cloud" },
+  { icon: <FaGitlab size={40} className="text-orange-700" />, title: "GitLab" },
+  { icon: <SiOpenai size={40} className="text-grey-900" />, title: "ChatGPT" },
+  { icon: <SiJirasoftware size={40} className="text-blue-600" />, title: "JIRA" },
+  { icon: <SiApachekafka size={40} className="text-grey-900" />, title: "Kafka" },
+  { icon: <Leaf size={40} className="fill-green-500" />, title: "Spring Boot" },
+  { icon: <SiApachetomcat size={40} className="text-red-600" />, title: "Tomcat" },
+  { icon: <FaReact size={40} className="text-blue-300" />, title: "React" },
+  { icon: <SiDjango size={40} className="text-green-300" />, title: "Django" },
+  { icon: <SiPostgresql size={40} className="text-blue-700" />, title: "PostgreSQL" },
+  { icon: <SiOracle size={40} className="text-red-700" />, title: "Oracle DB" },
+  { icon: <SiJavascript size={40} className="text-yellow-300" />, title: "JavaScript" },
+  { icon: <SiMicrosoftsqlserver size={40} className="text-blue-500" />, title: "MS SQL" },
+  { icon: <FaJava size={40} className="text-orange-400" />, title: "Java" },
+  { icon: <FaPython size={40} className="text-yellow-400" />, title: "Python" },
 ];
 
 export default function Skills() {
@@ -39,7 +51,7 @@ export default function Skills() {
       viewport={{ once: true }}
     >
       <motion.h2 className="text-3xl font-bold text-teal-300" variants={fadeRotateZoom}>
-        Proficiencies
+        Technical Skills
       </motion.h2>
 
       <motion.div
