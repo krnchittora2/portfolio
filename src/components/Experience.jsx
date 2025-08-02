@@ -8,20 +8,24 @@ const experience = [
     company: "FinMechanics",
     period: "Apr 2024 - Present",
     items: [
-      "Developed scalable microservices in Java and Spring Boot",
-      "Led frontend architecture using React and TypeScript",
+      "Integrated bullion indent order workflow in Spring Boot microservices, achieving 30% faster response times vs legacy competitor solutions",
+      "Led AI-enabled reporting automation using Ollama & Gemini API, reducing manual effort by 80% and accelerating report configuration",
+      "Developed a fault‑tolerant trade ingestion interface using Hazelcast queues, processing 40K+ trades/day with 40% lower latency and 99% uptime",
+      "Optimized DB and microservices performance via indexing and logic refactors, cutting DB latency by 80% and heap usage by 40%"
     ],
-    tags: ["Spring Boot", "AWS", "Rest API", "GitLab", "Postgresql"]
+    tags: ["Spring Boot", "AWS", "Rest API", "GitLab", "AI", "PostgreSQL", "MS SQL"]
   },
   {
     title: "Associate Consultant",
     company: "FinMechanics",
     period: "Jun 2022 - Mar 2024",
     items: [
-      "Built internal tools using Python and Django",
-      "Integrated third-party APIs and improved performance by 30%",
+      "Built a UI-driven report scheduler using Quartz & Hazelcast queues, deploying a dedicated multithreaded microservice for custom scheduling",
+      "Designed and implemented SMTP-based automated email alerts for interface failures, mitigating risk of business loss from undetected system issues",
+      "Configured 50+ Groovy-based risk limits to enable sub‑minute valuation of 200K+ trades for NOP, Credit, and Market Risk metrics",
+      "Resolved security flaws in 10+ modules via XSS checks, JS libraries upgrades, and CSP headers to prevent injection and HTTP smuggling attacks"
     ],
-    tags: ["Spring Boot", "Java", "MS SQL", "Oracle", "Tomcat"]
+    tags: ["Spring Boot", "Java", "MS SQL", "Oracle", "Tomcat", "HTTP", "Groovy", "Hazelcast"]
   },
   {
     title: "Automation Engineer",
