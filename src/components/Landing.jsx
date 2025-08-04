@@ -24,6 +24,11 @@ export default function Landing() {
         backSpeed={40}
         loop
       />
+      
+      {/* Short description added here */}
+      <p className="text-base sm:text-lg text-gray-500 px-4 leading-relaxed">
+        👋 Hey there! I craft snappy backend services, full-stack apps, and clever AI-powered tools — all built to scale, run fast, and actually get things done.
+      </p>
 
       <motion.div className="flex flex-wrap justify-center gap-4 pt-4">
         {[
