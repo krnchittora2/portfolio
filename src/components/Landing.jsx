@@ -7,6 +7,7 @@ import { fadeRotateZoom } from "../utils/animations";
 export default function Landing() {
   return (
     <motion.section
+      id="home"
       className="relative text-center space-y-6 z-10 max-w-3xl mx-auto pt-10"
       variants={fadeRotateZoom}
       initial="hidden"

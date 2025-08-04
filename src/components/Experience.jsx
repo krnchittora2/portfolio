@@ -8,6 +8,7 @@ export default function Experience() {
 
   return (
     <motion.section
+      id="experience"
       className="max-w-7xl mx-auto px-4"
       initial="hidden"
       whileInView="show"

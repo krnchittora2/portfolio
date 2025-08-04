@@ -10,7 +10,7 @@ export default function PageActions() {
   return (
     <>
       {/* Fixed Action Buttons */}
-      <div className="fixed top-5 right-5 z-50 flex flex-col items-center gap-4">
+      <div className="fixed top-36 right-5 z-50 flex flex-col items-center gap-4">
         <motion.button
           onClick={toggleTheme}
           className="bg-gray-700 hover:bg-gray-600 text-white dark:text-black p-2 rounded-full shadow-xl"

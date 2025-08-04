@@ -44,6 +44,7 @@ const skills = [
 export default function Skills() {
   return (
     <motion.section
+      id="skills"
       className="space-y-10 z-10 relative text-center"
       variants={staggerContainer}
       initial="hidden"

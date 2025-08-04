@@ -15,7 +15,7 @@ export default function Projects() {
   const filteredProjects = filter === "All" ? allProjects : allProjects.filter(p => p.skills.includes(filter));
 
   return (
-    <motion.section className="max-w-[95vw] mx-auto px-4" initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeRotateZoom}>
+    <motion.section id="projects" className="max-w-[95vw] mx-auto px-4" initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeRotateZoom}>
       <h2 className="text-3xl font-bold text-center text-teal-400 mb-10">Projects</h2>
 
       <motion.div

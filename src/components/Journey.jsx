@@ -8,7 +8,7 @@ export default function Journey() {
   const [activeActivity, setActiveActivity] = useState(0);
 
   return (
-    <motion.section className="max-w-7xl mx-auto px-4" initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeRotateZoom}>
+    <motion.section id="journey" className="max-w-7xl mx-auto px-4" initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeRotateZoom}>
       <h2 className="text-3xl font-bold text-center text-teal-400 mb-10">My Journey</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left: Schools */}
