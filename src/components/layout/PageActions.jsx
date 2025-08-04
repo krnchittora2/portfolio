@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Sun, Moon, FileDown, Send, ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTheme, scrollToTop } from "./ThemeContext";
@@ -19,15 +20,18 @@ export default function PageActions() {
         >
           {darkMode ? <Sun size={18} /> : <Moon size={18} />}
         </motion.button>
-        <motion.a
-          href="/portfolio/psych" // placeholder page
-          className="bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full shadow-xl"
+        <motion.div
           whileHover={{ scale: 1.2, rotate: -10 }}
           whileTap={{ scale: 0.95 }}
-          title="Download Resume"
         >
-          <FileDown size={18} />
-        </motion.a>
+          <Link
+            to="/psych"
+            className="bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full shadow-xl block"
+            title="Download Resume"
+          >
+            <FileDown size={18} />
+          </Link>
+        </motion.div>
         <motion.a
           href="#contact"
           className="bg-teal-700 hover:bg-gray-600 text-white p-2 rounded-full shadow-xl"

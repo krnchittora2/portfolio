@@ -1,53 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeRotateZoom } from "../utils/animations";
-
-const experience = [
-  {
-    title: "Software Consultant",
-    company: "FinMechanics",
-    period: "Apr 2024 - Present",
-    items: [
-      "Integrated bullion indent order workflow in Spring Boot microservices, achieving 30% faster response times vs legacy competitor solutions",
-      "Led AI-enabled reporting automation using Ollama & Gemini API, reducing manual effort by 80% and accelerating report configuration",
-      "Developed a fault‑tolerant trade ingestion interface using Hazelcast queues, processing 40K+ trades/day with 40% lower latency and 99% uptime",
-      "Optimized DB and microservices performance via indexing and logic refactors, cutting DB latency by 80% and heap usage by 40%"
-    ],
-    tags: ["Spring Boot", "AWS", "Rest API", "GitLab", "AI", "PostgreSQL", "MS SQL"]
-  },
-  {
-    title: "Associate Consultant",
-    company: "FinMechanics",
-    period: "Jun 2022 - Mar 2024",
-    items: [
-      "Built a UI-driven report scheduler using Quartz & Hazelcast queues, deploying a dedicated multithreaded microservice for custom scheduling",
-      "Designed and implemented SMTP-based automated email alerts for interface failures, mitigating risk of business loss from undetected system issues",
-      "Configured 50+ Groovy-based risk limits to enable sub‑minute valuation of 200K+ trades for NOP, Credit, and Market Risk metrics",
-      "Resolved security flaws in 10+ modules via XSS checks, JS libraries upgrades, and CSP headers to prevent injection and HTTP smuggling attacks"
-    ],
-    tags: ["Spring Boot", "Java", "MS SQL", "Oracle", "Tomcat", "HTTP", "Groovy", "Hazelcast"]
-  },
-  {
-    title: "Automation Engineer",
-    company: "Abzooba",
-    period: "May 2021 - Jun 2021",
-    items: [
-      "Check Check Check Check Check Check Check Check ",
-      "Check Check Check Check Check Check Check Check ",
-    ],
-    tags: ["Python", "Kubernetes", "Docker"]
-  },
-  {
-    title: "Web Developer",
-    company: "Agrivision4U",
-    period: "May 2020 -  Dec 2021",
-    items: [
-      "Check Check Check Check Check Check Check Check ",
-      "Check Check Check Check Check Check Check Check ",
-    ],
-    tags: ["Laravel", "React", "PHP"]
-  },
-];
+import { experience } from "../data/content";
 
 export default function Experience() {
   const [activeEntry, setActiveEntry] = useState(0);
@@ -95,7 +49,7 @@ export default function Experience() {
           <div className="absolute top-0 right-0 w-40 h-40 bg-teal-700 rounded-bl-full opacity-10"></div>
           <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-700 rounded-tr-full opacity-10"></div>
 
-          <h3 className="text-2xl font-bold text-teal-300 border-b border-gray-600 pb-2 mb-4">
+          <h3 className="text-xl font-bold text-teal-300 border-b border-gray-600 pb-2 mb-4">
             {experience[activeEntry].title} @ {experience[activeEntry].company}
           </h3>
           <p className="text-sm text-gray-400 italic mb-6">
@@ -112,7 +66,7 @@ export default function Experience() {
             {experience[activeEntry].items.map((item, i) => (
               <li
                 key={i}
-                className="relative pl-6 text-gray-300 before:content-[''] before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-teal-400 before:rounded-full"
+                className="relative pl-6 text-gray-300 text-sm before:content-[''] before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-teal-400 before:rounded-full"
               >
                 {item}
               </li>

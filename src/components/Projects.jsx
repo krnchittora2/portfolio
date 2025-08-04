@@ -7,41 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { fadeRotateZoom } from "../utils/animations";
-
-const allProjects = [
-  {
-    title: "CRM Dashboard",
-    description: "A simple Django web application for employee and role management in a corporate setting, featuring CRUD functionality and MySQL database for efficient data storage and retrieval with secure login access and an interactive user dashboard.",
-    skills: ["Django", "Python", "MySQL"],
-    date: "2024",
-    link: "https://github.com/krnchittora2/Django-CRUD",
-    platform: "Self"
-  },
-  {
-    title: "Portfolio Website",
-    description: "A dynamic portfolio using React, Framer Motion, and Vite hosted on GitHub Pages with theme support.",
-    skills: ["React", "Vite", "TailwindCSS"],
-    date: "2025",
-    link: "https://krnchittora2.github.io/portfolio/",
-    platform: "Self"
-  },
-  {
-    title: "House Price Prediction",
-    description: "Random Forest Regression model to predict the prices of houses in a city using 80 features. Accuracy Score - 0.87.",
-    skills: ["Machine Learning", "Python", "Pandas"],
-    date: "2021",
-    link: "https://github.com/krnchittora2/ML-House-Price-Prediction-Regression-Modelling",
-    platform: "Technical Council, IIT Bombay"
-  },
-  {
-    title: "Blockchain for EHR",
-    description: "An innovative user-centric data-driven digital platform to link medical facilities with financial aid, incorporating blockchain technology for secure and transparent transactions.",
-    skills: ["Product Development", "System Design"],
-    date: "2019",
-    link: "https://github.com/krnchittora2/ML-House-Price-Prediction-Regression-Modelling",
-    platform: "Technical Council, IIT Bombay"
-  }
-];
+import { allProjects } from "../data/content";
 
 export default function Projects() {
   const [filter, setFilter] = useState("All");

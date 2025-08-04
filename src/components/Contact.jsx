@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Github, Linkedin, FileDown, Send } from "lucide-react";
 import { fadeRotateZoom } from "../utils/animations";
@@ -44,10 +45,10 @@ export default function Contact() {
             <h4 className="text-lg font-semibold text-teal-300">Quick Links</h4>
             <ul className="text-sm space-y-4 text-gray-300">
               <li>
-                <a href="/Karan_Chittora_Resume.pdf" className="hover:text-teal-400" download>
+                <Link to="/psych" className="hover:text-teal-400">
                   <FileDown size={14} className="inline mr-1" />
                   Download Resume
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="mailto:krnchittora2@gmail.com" className="hover:text-teal-400">

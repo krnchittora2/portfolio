@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AnimatedBackground() {
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden">
+    <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
       <div className="w-[200%] h-[200%] animate-spin-slow rounded-full bg-gradient-to-r from-teal-800 via-gray-900 to-blue-800 opacity-10 blur-3xl"></div>
       <svg className="absolute top-0 left-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
         <defs>
